@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <script src="../contact.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav style="background-color: rgb(22, 22, 22); padding: 10px"></nav>
+      <nav>
+        <img src="../img/logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">My Project</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </nav>
+    </div>
+    <main>
+      <form>
+        <section>
+          <h1>CONTACT FORM</h1>
+          <ul>
+            <li>
+              <label for="input-name">Name</label>
+              <input id="input-name" type="text" />
+            </li>
+            <li>
+              <label for="input-email">Email</label>
+              <input id="input-email" type="email" class="email" />
+            </li>
+            <li>
+              <label for="input-phone">Phone Number</label>
+              <input id="input-phone" type="number" />
+            </li>
+            <li>
+              <label for="input-message">Your Message</label>
+              <textarea id="input-message"></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="input-subject">How did you find us?</label>
+          <div
+            style="display: flex; padding: 10px"
+            name="subject"
+            id="input-subject"
+          >
+            <label for="web">Website</label>
+            <input type="checkbox" id="web" value="web" />
+
+            <label for="mouth">Social Media</label>
+            <input type="checkbox" id="mouth" value="Social Media" />
+
+            <!-- <option id="web">Web search</option>
+              <option id="mouth">Mouth to mouth</option> -->
+          </div>
+          <!-- <div>
+              <input type="checkbox" id="web" value="web">
+              <label for="web">web</label>
+  
+              <input type="checkbox" id="mouth" value="mouth">
+              <label for="mouth">mouth</label>
+          </div> -->
+        </section>
+
+        <section id="form-actions">
+          <button type="reset" class="btn-empty">Clear</button>
+          <button type="button" class="btn-filled" onclick="submitData()">
+            Submit
+          </button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

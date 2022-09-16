@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="blogdetail.html">
+    <script src="../blog.js" defer></script>
+    <style>
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        /* border: 1px solid #ccc; */
+        /* border-radius: 4px; */
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+        <nav style="background-color: rgb(22, 22, 22); padding: 10px;">
+        
+        </nav>
+      <nav>
+        <img src="../img/logo.png" class="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">My Project</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </nav>
+    </div>
+    <h1></h1>
+    <!-- <div style="background-color: white !important" class="container2">
+      <form onsubmit="addBlog(event)">
+        <label style="font-weight: bold; font-size: 20px" for="projectname"
+          >Project Name</label
+        >
+        <input
+          type="text"
+          class="btn"
+          id="projectname"
+          name="projectname"
+          placeholder="Project name.."
+        />
+        <div style="display: flex; flex: 100%; margin-top: 30px">
+          <div>
+            <label
+              for="input-start-date"
+              style="font-weight: bold; font-size: 20px"
+            >
+              Start Date
+            </label>
+            <input
+              type="date"
+              class="btn"
+              id="input-start-date"
+              style="
+                width: 85%;
+                margin-right: 50px;
+                padding: 10px;
+                margin-top: 5px;
+              "
+            />
+          </div>
+
+          <div>
+            <label
+              for="input-end-date"
+              style="font-weight: bold; font-size: 20px"
+            >
+              End Date
+            </label>
+            <input
+              type="date"
+              id="input-end-date"
+              class="btn"
+              style="width: 100%; padding: 10px; margin-top: 5px"
+            />
+          </div>
+        </div>
+        <div>
+          <p style="font-weight: bold; font-size: 20px; margin-top: 50px; margin-bottom: 10px;">Technologies</p>
+          <div style="display: flex;">
+            <label class="ctn"
+            >Node Js
+            <input type="checkbox" checked="checked" id="nodejs" value="NodeJs" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ctn"
+            >Next Js
+            <input type="checkbox" id="nextjs" value="NextJs" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="ctn"
+            >React Js
+            <input type="checkbox" id="reactjs" value="Reactjs"/>
+            <span class="checkmark"></span>
+          </label>
+          <label class="ctn"
+            >TypeScript
+            <input type="checkbox" id="typescript" value="typescript"/>
+            <span class="checkmark"></span>
+          </label>
+          </div>
+          
+        </div>
+        
+        <div style="margin-top: 45px">
+          <label for="description" style="font-weight: bold; font-size: 20px"
+            >Description</label
+          >
+          <textarea
+            id="description"
+            class="btn"
+            name="description"
+            placeholder="Description.."
+            style="height: 200px; border-radius: 20px"
+          ></textarea>
+        </div>
+        <div
+          style="
+            margin-top: 15px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            display: flex;
+          "
+        >
+          <label style="font-weight: bold"> Upload Image </label>
+          <div>
+            <label for="input-blog-image">
+              <img
+                style="width: 30px; margin-left: 30px"
+                src="../img/upload-3-128.png"
+                alt=""
+              />
+            </label>
+            <input type="file" id="input-blog-image" hidden />
+          </div>
+        </div>
+
+        <input
+          style="margin-top: 10px"
+          class="btn"
+          type="submit"
+          value="Submit"
+        />
+      </form>
+    </div> -->
+    <div style="margin: 50px; justify-content: center;">
+        <h1>
+            My Project
+        </h1>
+        
+        <div id="contents" class="blog-list">
+            <!-- Content 1copy -->
+            <div class="blog-list-item">
+              <div class="blog-image">
+                  <img src="../img/barca.jpg" alt="Gambar wong" />
+              </div>
+              <div class="blog-content">
+                  <h3>
+                      <a href="blogdetail.html">JUDUL BERITA
+                      </a>
+                  </h3>
+                  <div class="detail-blog-content">
+                      01 Januari 2022 00:01 WIB | Anonymous
+                  </div>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magni 
+                      quasi voluptatem. Dolor corporis natus praesentium, beatae error optio repellat 
+                      reprehenderit esse? Hic in minima facilis maxime incidunt quaerat?
+                  </p>
+                  <i class="fa-brands fa-vuejs"></i>
+                  <i class="fa-brands fa-js-square"></i>
+                  <i class="fa-brands fa-react"></i>
+                  <i class="fa-brands fa-node-js"></i>
+
+                  <div style="margin-bottom: 15px;">
+
+                  </div>
+                  <div class="btn-group">
+                    <button style="padding: 10px;" class="btn">Edit</button>
+                    <button style="padding: 10px;" class="btn">Delete</button>
+                </div>
+              </div>
+          </div>
+            <!-- Content 2copy -->
+            <div class="blog-list-item">
+                <div class="blog-image">
+                    <img src="../img/barca.jpg" alt="Gambar wong" />
+                </div>
+                <div class="blog-content">
+                    <h3>
+                        <a href="blogdetail.html">JUDUL BERITA
+                        </a>
+                    </h3>
+                    <div class="detail-blog-content">
+                        01 Januari 2022 00:01 WIB | Anonymous
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam magni 
+                        quasi voluptatem. Dolor corporis natus praesentium, beatae error optio repellat 
+                        reprehenderit esse? Hic in minima facilis maxime incidunt quaerat?
+                    </p>
+                    <div style="margin-bottom: 15px;">
+
+                    </div>
+                    <div class="btn-group">
+                        <button style="padding: 10px;" class="btn">Edit</button>
+                        <button style="padding: 10px;" class="btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+  </body>
+</html>
